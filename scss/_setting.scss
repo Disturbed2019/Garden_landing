@@ -72,6 +72,12 @@ label{
     border: 1.5px solid #C29216;
     margin: 50px auto;
   }
+  &-contacts{
+    width: 100%;
+    background: #C29216;
+    border-radius: 3px;
+    color: #ffffff;
+  }
   &-footer {
     font-family: Lato,sans-serif;
     font-size: 18px;
@@ -148,5 +154,26 @@ label{
     width: 78px;
     height: 78px;
     background-image: url("../images/icons/sand_clock.svg");
+  }
+}
+.address{
+  &:before{
+    margin-right: 15px;
+    content: url("../images/icons/icon-geo.svg");
+    display: inline-block;
+  }
+}
+.phone{
+  &:before{
+    margin-right: 15px;
+    content: url("../images/icons/icon-phone.svg");
+    display: inline-block;
+  }
+}
+.work-time{
+  &:before{
+    margin-right: 15px;
+    content: url("../images/icons/icon-clock.svg");
+    display: inline-block;
   }
 }
