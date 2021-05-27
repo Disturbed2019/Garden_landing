@@ -14,6 +14,7 @@
     <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;700;900&display=swap"
             rel="stylesheet">
+    <script src="js/main.js" defer></script>
     <link href="scss/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -29,29 +30,28 @@
                         <img src="images/logo.svg" alt="Logo" class="logo__img">
                     </a>
                     <!-- /.logo -->
-                    <nav class="menu">
-                        <ul class="menu-list">
-                            <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Преимущества</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Услуги</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Наши работы</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Отзывы</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- /.menu -->
                 </div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="#advantages" class="menu-list__link">Преимущества</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#tasks" class="menu-list__link">Услуги</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#gallery" class="menu-list__link">Наши работы</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#reviews" class="menu-list__link">Отзывы</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#footer" class="menu-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <!-- /.header-main -->
-                <button  class="btn btn-phone">
+                <button  class="btn btn-phone openModal">
                     Заказать звонок
                 </button>
                 <button class="burger-menu" aria-label="burger"></button>
@@ -63,12 +63,12 @@
     <div class="container">
         <div class="main-wrapper">
             <div>
-                <h1 class="main__title">Сделаем cад вашей мечты из любого участка</h1>
+                <h1 class="main__title">Сделаем cад вашей мечты из&nbsp;любого участка</h1>
                 <p class="main__description">Уникальный и продуманный <br> ландшафт за 17 дней</p>
 <!--                <button  type="button" class="btn btn-main">Оставить заявку</button>-->
 
                 <div class="main__badges">
-                    <button  type="button" class="btn btn-main">Оставить заявку</button>
+                    <button  type="button" class="btn btn-main openModal">Оставить заявку</button>
 <!--                    <a href="#" class="main__scroll" aria-label="к следующему экрану"></a>-->
                     <ul>
                         <li><span class="badge badge_star"></span><p>Гарантия на все <br>виды работ</p></li>
@@ -134,12 +134,10 @@
     </div>
 </section>
 <section class="gallery" id="gallery">
-    <div class="container">
-        <div class="gallery-wrapper">
-            <div class="decor_1"></div>
-            <div class="decor_2">
-                <img src="images/rock_decor.png" alt="">
-            </div>
+    <div class="gallery-wrapper">
+        <div class="decor_1"></div>
+        <div class="decor_2"><img src="images/rock_decor.png" alt=""></div>
+        <div class="container">
             <h2 class="gallery__title">Посмотрите наши работы</h2>
             <p class="gallery__description">Более 70 проектов разной сложности</p>
             <div class="gallery-list">
@@ -157,7 +155,6 @@
                     <img src="images/gallery/gallery_7.jpg" alt="">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -219,9 +216,7 @@
                 <form class="form contact-form">
                     <input type="text" class="input" name="name" placeholder="Имя">
                     <input type="text" class="input" name="phone" placeholder="Телефон">
-                    <button type="submit" class="btn btn-form">
-                        Отправить
-                    </button>
+                    <button type="submit" class="btn btn-form">Отправить</button>
                     <div class="contact-form__license">
                         <input type="checkbox" id="license" name="license" hidden>
                         <label for="license" class="license__check"></label>
@@ -294,12 +289,12 @@
                         Сб: 10:00—17:00 <br>
                         Вс: выходной</li>
                 </ul>
-                <button class="btn btn-contacts">Оставить заявку</button>
+                <button class="btn btn-contacts openModal">Оставить заявку</button>
             </div>
         </div>
     </div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer-logo">
             <img src="images/footer_logo.png" alt="">
@@ -314,11 +309,11 @@
                 </div>
                 <div class="footer-list__item">
                     <ul>
-                        <li><a class="footer-list__link" href="#">Преимущества</a></li>
-                        <li><a class="footer-list__link" href="#">Услуги</a></li>
-                        <li><a class="footer-list__link" href="#">Наши работы</a></li>
-                        <li><a class="footer-list__link" href="#">Отзывы</a></li>
-                        <li><a class="footer-list__link" href="#">Контакты</a></li>
+                        <li><a class="footer-list__link" href="#advantages">Преимущества</a></li>
+                        <li><a class="footer-list__link" href="#tasks">Услуги</a></li>
+                        <li><a class="footer-list__link" href="#gallery">Наши работы</a></li>
+                        <li><a class="footer-list__link" href="#reviews">Отзывы</a></li>
+                        <li><a class="footer-list__link" href="#footer">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer-list__item">
@@ -330,27 +325,34 @@
                 </div>
             </div>
             <div class="footer-contact">
-                <button class="btn btn-footer">Заказать звонок</button>
+                <button class="btn btn-footer openModal">Заказать звонок</button>
                 <a href="#" class="footer-phone">+7 (800) 309-88-80</a>
             </div>
         </div>
     </div>
 </footer>
-<script>
-
-    const formLicense = document.querySelector('.contact-form__license');
-    formLicense.addEventListener('click',() => {
-        let chekingBox = document.querySelector('#license');
-        let label_check = document.querySelector('.license__check');
-        if (chekingBox.checked){
-            label_check.classList.add('active');
-        }else {
-            label_check.classList.remove('active');
-        }
-
-    });
-
-    // console.log(check)
-</script>
+<!-- modal (start) -->
+<div class="modal hidden">
+    <div class="overlay"></div>
+    <div class="modal-wrapper">
+        <h2 class="modal-title">Доверьте нам воплотить сад вашей мечты</h2>
+        <p class="modal-description">Оставьте заявку, мы перезвоним и обсудим проект</p>
+        <button type="button" class="modal-close" aria-label="закрыть модальное окно"></button>
+        <form class="form modal__form">
+            <input type="text" name="name" class="input modal__input" placeholder="Имя">
+            <input type="tel" name="phone" class="input modal__input" placeholder="Номер телефона">
+            <div class="modal-buttons">
+                <button type="submit" class="btn btn-form">Отправить</button>
+                <div class="modal-license">
+                    <input type="checkbox" id="modal-license" name="license" hidden>
+                    <label for="modal-license" class="modal-license__check"></label>
+                    <p class="license">Даю согласие на <a href="#" style="color: #C29216;">обработку персональных данных</a></p>
+                </div>
+            </div>
+        </form>
+        <!-- /.form modal__form -->
+    </div>
+</div>
+<!-- modal (end) -->
 </body>
 </html>
